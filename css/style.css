@@ -54,6 +54,10 @@ body {
     flex-wrap: wrap;
 }
 
+.j-center {
+    justify-content: center;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -98,7 +102,37 @@ img {
 footer {
     height: 50px;
     background-color: var(--c-1);
+}
+
+.attribution {
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     padding: 5px 15px;
+} 
+
+@media screen and (max-width: 1400px) {
+    
+    #card {
+        width: 50%;
+        margin: 0 15px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    #card {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    #card {
+        width: 100%;
+    }
+
 }
