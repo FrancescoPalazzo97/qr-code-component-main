@@ -1,0 +1,104 @@
+/* ROOT */
+
+:root{
+    /* COLORI */
+    --white: hsl(0, 0%, 100%);
+    --c-1:#d6e2f0;
+    --c-2:#68778d;
+    --c-3:#1f3251;
+
+    /* FONT */
+    --ff-primary: "OutFit";
+    --fs-md: 15px;
+    --fw-title: 700;
+    --fw-text: 400;
+}
+
+/* GENERICS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+}
+
+/* UTILITY */
+
+.img-fluid {
+    width: 100%;
+}
+
+/* LAYOUT */
+
+.w-20 {
+    width: 20%;
+}
+
+/* MARGIN E PADDING */
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+/* FLEX */
+
+.d-flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* MAIN */
+
+main {
+    height: calc(100vh - 50px);
+    background-color: var(--c-1);
+}
+
+#card {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 10px rgba(104,119,141,0.2);
+}
+
+img {
+    border-radius: 15px;
+}
+
+#card-content {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--c-3);
+}
+
+#card-content>h1 {
+    font-size: 30px;
+    padding: 0 15px;
+    font-weight: var(--fw-title);
+}
+
+#card-content>p {
+    font-size: var(--fs-md);
+    margin: 30px 0 20px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 50px;
+    background-color: var(--c-1);
+    display: flex;
+    align-items: flex-end;
+    padding: 5px 15px;
+}
